@@ -1,5 +1,10 @@
 {
-  "name": "api",
+  "name": "backend",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CaioQuerino/Task-Manager/tree/main/backend"
+  },
+  "private": true,
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -7,19 +12,22 @@
   "scripts": {
     "start": "node src/server.js",
     "dev": "tsx --watch src/server.ts",
-    "build": "npm run build",
+    "build": "tsc",
     "prisma:studio": "npx prisma studio"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "@fastify/cors": "^11.0.1",
     "@prisma/client": "^6.9.0",
     "fastify": "^5.3.3",
-    "node-ts": "^8.0.5",
     "prisma": "^6.9.0",
-    "tsx": "^4.19.4",
     "zod": "^3.25.56"
-  }
+  },
+  "devDependencies": {
+    "node-ts": "^8.0.6",
+    "tsc": "^2.0.4",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3"
+  },
+  "author": "Caio Querino",
+  "license": "ISC"
 }
