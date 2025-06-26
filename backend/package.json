@@ -12,6 +12,8 @@
   "scripts": {
     "start": "node src/server.js",
     "dev": "tsx --watch src/server.ts",
+    "prisma:generate": "npx prisma generate",
+    "prisma:migrate": "npx prisma migrate dev",
     "build": "tsc",
     "prisma:studio": "npx prisma studio"
   },

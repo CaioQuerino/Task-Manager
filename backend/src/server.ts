@@ -1,6 +1,5 @@
 import fastify from 'fastify'
 import cors from '@fastify/cors'
-import { TasksRoutes } from './routes/tasks.routes'
 import { prisma } from './lib/prisma'
 import config from './config'
 import { tasksRoutes } from './routes'
@@ -25,7 +24,6 @@ const start = async () => {
     console.log(`🚀 API running on ${config.api.host}/${config.api.port}/`)
     console.log(`🌐 Web running on ${config.web.cors.origin}${config.web.page.title}`)
   } catch (err) {
-    console.error(err)
     process.exit(1)
   }
 }
